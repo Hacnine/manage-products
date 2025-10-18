@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { formatPrice, formatRelativeTime } from '@/lib/formatters';
-import type { Product, Category } from '@/store/api/apiSlice';
+import type { Product, Category } from '@/store/api/productsApi';
 
 interface ProductCardProps {
   product: Product;

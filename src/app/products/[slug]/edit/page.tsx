@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams, useRouter } from 'next/navigation';
-import { useGetProductsQuery, useUpdateProductMutation, useGetCategoriesQuery } from '@/store/api/apiSlice';
+import { useGetProductsQuery, useUpdateProductMutation, useGetCategoriesQuery } from '@/store/api/productsApi';
 import Layout from '@/components/Layout';
 import ProductForm from '@/components/ProductForm';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';

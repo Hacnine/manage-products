@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeftIcon, PencilIcon, TrashIcon } from '@heroicons/react/24/outline';
-import { useGetProductBySlugQuery, useGetCategoriesQuery, useDeleteProductMutation } from '@/store/api/apiSlice';
+import { useGetProductBySlugQuery, useGetCategoriesQuery, useDeleteProductMutation } from '@/store/api/productsApi';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';

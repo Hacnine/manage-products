@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Card, CardContent } from '@/components/ui/card';
 import { PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 import { isValidUrl } from '@/lib/formatters';
-import type { Product } from '@/store/api/apiSlice';
+import type { Product } from '@/store/api/productsApi';
 
 const productSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),

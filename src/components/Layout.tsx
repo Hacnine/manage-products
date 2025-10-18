@@ -49,7 +49,6 @@ const Layout = ({ children, onSearch }: LayoutProps) => {
           <div className="flex items-center justify-between gap-4">
             {/* Logo */}
             <Link href="/products" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <Squares2X2Icon className="h-6 w-6 text-primary" />
               <span className="text-lg font-semibold text-foreground hidden sm:inline">Product Manager</span>
             </Link>
 

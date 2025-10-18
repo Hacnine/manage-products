@@ -4,7 +4,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { combineReducers } from '@reduxjs/toolkit';
 import authReducer from './slices/authSlice';
-import { apiSlice } from './api/apiSlice';
+import { apiSlice } from './api/productsApi';
 
 const persistConfig = {
   key: 'root',

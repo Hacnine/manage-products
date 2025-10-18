@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useAppSelector } from '@/store/hooks';
 import { useState, useEffect } from 'react';
-import { useGetProductsQuery, useLazySearchProductsQuery, useGetCategoriesQuery, useDeleteProductMutation } from '@/store/api/apiSlice';
+import { useGetProductsQuery, useLazySearchProductsQuery, useGetCategoriesQuery, useDeleteProductMutation } from '@/store/api/productsApi';
 import Layout from '@/components/Layout';
 import ProductCard from '@/components/ProductCard';
 import Pagination from '@/components/Pagination';
@@ -86,7 +86,7 @@ export default function ProductsPage() {
             </div>
             <div>
               <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-foreground via-primary to-accent dark:from-foreground dark:via-primary dark:to-accent bg-clip-text text-transparent">
-                Product Showcase
+                Product Management
               </h1>
               <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
                 Discover and manage your amazing product collection with style and elegance
