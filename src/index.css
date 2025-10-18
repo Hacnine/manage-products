@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Primary palette - dark blue-gray (#0d1821) */
+    --background: 210 13% 94%; /* #EFF1F3 light gray */
+    --foreground: 205 46% 8%; /* #0d1821 dark blue-gray */
+
+    --card: 210 13% 94%;
+    --card-foreground: 205 46% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 205 46% 8%;
+
+    /* Primary - forest green (#4E6E5D) */
+    --primary: 147 17% 35%;
+    --primary-foreground: 210 13% 94%;
+
+    /* Secondary - tan/gold (#ad8a64) */
+    --secondary: 34 30% 53%;
+    --secondary-foreground: 205 46% 8%;
+
+    --muted: 210 13% 88%;
+    --muted-foreground: 205 20% 30%;
+
+    /* Accent - rust red (#A44A3F) */
+    --accent: 5 44% 45%;
+    --accent-foreground: 210 13% 94%;
+
+    --destructive: 5 44% 45%;
+    --destructive-foreground: 210 13% 94%;
+
+    --border: 210 13% 85%;
+    --input: 210 13% 85%;
+    --ring: 147 17% 35%;
+
+    --radius: 0.5rem;
+
+    /* Transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 205 46% 8%;
+    --foreground: 210 13% 94%;
+
+    --card: 205 40% 12%;
+    --card-foreground: 210 13% 94%;
+
+    --popover: 205 40% 12%;
+    --popover-foreground: 210 13% 94%;
+
+    --primary: 147 17% 45%;
+    --primary-foreground: 210 13% 94%;
+
+    --secondary: 34 30% 43%;
+    --secondary-foreground: 210 13% 94%;
+
+    --muted: 205 30% 15%;
+    --muted-foreground: 210 13% 70%;
+
+    --accent: 5 44% 55%;
+    --accent-foreground: 210 13% 94%;
+
+    --destructive: 5 44% 55%;
+    --destructive-foreground: 210 13% 94%;
+
+    --border: 205 30% 20%;
+    --input: 205 30% 20%;
+    --ring: 147 17% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
